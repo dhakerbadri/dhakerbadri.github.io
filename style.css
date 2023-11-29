@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: #22223B;
+  overflow: hidden;
+}
+
+.salute {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.saluteTextContainer {
+  flex: 3;
+}
+
+.saluteImgContainer {
+  flex: 1;
+}
+
+.saluteText {
+  color: #F2E9E4;
+  font-size: 30vw;
+  cursor: default;
+}
+
+.saluteImg {
+  width: 100%;
+}
+
+.nameContainer {
+  height: 100vh;
+  background-color: #C9ADA7;
+}
+
+.name {
+  font-size: 13vw;
+  color: #4A4E69;
+  cursor: default;
+  text-align: center;
+  line-height: 100vh;
+}
+
+.jobTitleContainer {
+  height: 100vh;
+}
+.Description {
+  height: 100vh;
+}
+.dark {
+  background: url("./img/4.png");
+}
+.purple {
+  background: #9A8C98 url("./img/Background.png");
+}
+
+.jobTitle {
+  font-size: 10vw;
+  color: #C9ADA7;
+  line-height: 100vh;
+  cursor: default;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 30vh;
+  padding: 0px 100px;
+}
+
+.projectsTitle {
+  font-size: 10vw;
+  color: #F2E9E4;
+}
+
+.profileTitle {
+  font-size: 6vw;
+  color: rgb(255, 255, 255);
+}
+
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.profile:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+
+.phone {
+  flex: 1;
+  width: 300px;
+  height: 600px;
+  position: relative;
+}
+
+.profilePicture {
+  flex: 1;
+  width: 100vw;
+  position: relative;
+}
+
+.phoneScreen {
+  width: 264px;
+  height: 567px;
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: 28px;
+  overflow: scroll;
+}
+
+.phoneScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.phoneApp {
+  width: 100%;
+}
+
+.projectDetail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 7vw;
+  color: #F2E9E4;
+}
+
+.projectDesc {
+  font-size: 20px;
+  color: #F2E9E4;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.profileDesc {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  line-height: 40px;
+}
+
+
+.projectButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #F2E9E4;
+  color: #F2E9E4;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.profileButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #F2E9E4;
+  color: #F2E9E4;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-right: 320px ;
+}
+
+.projectButton::after {
+  content: "View Demo";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2E9E4;
+  color: #222;
+}
+.profileButton::after {
+  content: "Download Resume";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 1s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2E9E4;
+  color: #222;
+}
+
+.projectButton:hover.projectButton::after {
+  transform: translateX(100%);
+}
+
+.profileButton:hover.profileButton::after {
+  transform: translateX(100%);
+}
+
+.laptop {
+  width: 400px;
+  height: 379px;
+  flex: 1;
+  position: relative;
+}
+
+.laptopScreen {
+  width: 451px;
+  height: 283px;
+  position: absolute;
+  top: 18px;
+  left: 68px;
+  overflow: scroll;
+}
+
+.laptopApp {
+  width: 100%;
+}
+
+.laptopScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.githubContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.githubTitle {
+  font-size: 100px;
+  color: #C9ADA7;
+}
+
+.githubFind{
+  color:#C9ADA7 ;
+}
+.githubChart {
+  width: 820px;
+  text-align: center;
+}
+
+.dates {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 3s all ease;
+}
+
+.active:nth-child(4n) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n+1){
+  background-color: #195b2c;
+}
+.githubChart:hover .active:nth-child(2n){
+  background-color: #063f24;
+}
+
+.github {
+  color:#C9ADA7 ;
+}
+
+.github :hover{
+  color:#F2E9E4 ;
+}
+
+
+.githubSm{
+  display: none;
+}
+
+.buttonWithIcons {
+  display: flex;
+  justify-content: space-between; /* Align items at the start and end of the container */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #F2E9E4 ;
+  color: #9A8C98;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 50px; /* Adjust the space between icons */
+  /* You can use other techniques for aligning icons, like justify-content, etc. */
+}
+
+
+
+.image-list {
+  display: flex; /* Display children elements in a row */
+  align-items: center; /* Align items vertically in the center */
+}
+
+/* Styling for individual images */
+.image-list img {
+  height: 70px;
+  margin-right: 10px; 
+  
+}
+
+
+@media screen and (max-width:1024px) {
+
+  .projects{
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .project{
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .profile{
+    flex-direction: column;
+    height: max-content;
+  }
+  .project:nth-child(2n){
+    flex-direction: column;
+  }
+
+.profile:nth-child(2n){
+    flex-direction: column;
+  }
+  .phone,.laptop{
+    transform: none !important;
+  }
+  
+  .githubChart{
+    display: none;
+  }
+
+  .githubTitle{
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .githubSm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color:#555;
+    font-size: 30px;
+    text-align: center;
+  }
+}
